@@ -26,3 +26,7 @@ Simple example:
                         $("#timemachine_24").timemachine({format:"24"}); //add other options as required.                
                 }); 
         </script> 
+
+
+Originally uploaded here
+http://code.google.com/p/timepick-timemachine/
