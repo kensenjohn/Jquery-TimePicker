@@ -1,0 +1,21 @@
+<html>
+        <body> 
+                <br> 
+                        <form>  Example for a Jquery Timemachine - a time picker plugin.<br><br> 
+                                Time Picker 24 Hrs:     <input type="text" id="timemachine_24" name="timemachine_24" value="06:15:20"/><br><br>         
+                                Default Time Picker:    <input type="text" id="timemachine_default"  name="timemachine_default"  value="08:30:40 PM"/>
+                                <br><br> 
+                        </form> 
+        </body> 
+        <LINK REL="StyleSheet" HREF="jquery.timemachine.css" TYPE="text/css"> 
+        <script type="text/javascript" src="jquery-1.4.2.js"></script>  
+        <script type="text/javascript" src="jquery.timemachine-1.0.0.js" ></script>   
+        <script>        
+                $(document).ready(function()
+                {       
+                        //alert('Please make sure the jQuery path is set correctly. Comment this line.'); 
+                        $("#timemachine_24").timemachine({format:"24"});                
+                        $("#timemachine_default").timemachine({format:'AMPM'});         
+                }); 
+        </script> 
+</html>  
