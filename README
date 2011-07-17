@@ -1,0 +1,28 @@
+This plugin allows you to select time.
+Gives options to select hrs, mins, secs and AM/PM
+
+Users can use 12Hr or 24 Hr formats.
+
+All times are in a drop down. Click on the text box, the plugin will become visible and you can select the time fro the drop down.
+
+see test_timemachine.html for an example.
+
+The options are
+                        format:         'AMPM', // Specify '24' for 24 hr format
+                        showHrs:        true, //Specify whether Hr has to be shown
+                        showMins:       true, // specify whether Min has to be shown
+                        showSecs:       true, // specify whether Sec has to be shown
+                        min_increment:  15, // increment of the minutes be shown
+                        sec_increment:  1, // increment of the secs be showns
+                        hr_increment:   1       // increment of the Hr be shown.
+
+Simple example:
+
+<input type="text" id="timemachine_24" name="timemachine_24" value="06:15:20"/>
+
+<script>        
+                $(document).ready(function()
+                {       
+                        $("#timemachine_24").timemachine({format:"24"}); //add other options as required.                
+                }); 
+        </script> 
